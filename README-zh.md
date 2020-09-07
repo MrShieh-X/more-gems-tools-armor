@@ -1,8 +1,8 @@
 # 更多宝石工具和盔甲
 一个 Minecraft 的 Fabric Mod
 
-[Click me to go to the README in English](https://github.com/MrShieh-X/more-gems-tools-armor/README.md) <br/>
-[点我转到本Mod的使用手册（中文）](https://github.com/MrShieh-X/more-gems-tools-armor/manual-zh.md) <br/>
+[Click me to go to the README in English](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/README.md) <br/>
+[点我转到本Mod的使用手册](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/manual-zh.md) <br/>
 ## 版权
 MrShiehX 拥有该 Mod 的版权。<br/>
 任何人都可以对此模组提出意见和建议。
@@ -18,7 +18,7 @@ MrShiehX 拥有该 Mod 的版权。<br/>
 * Minecraft 1.16.2（我们（指我一个人）不确定1.16的其他版本是否兼容）；
 * Fabric loader（0.9.0+）。
 
-##已发现的BUG
+## 已发现的BUG
 - 六大矿石（具体请看手册）能使用石镐和木镐来挖掘，我们（指我一个人）的目标是使它不能使用木镐和石镐挖掘，这将会在下一个版本修复。
 - 五大宝石方块（具体请看手册）能使用石镐和木镐来挖掘，我们（指我一个人）的目标是使它不能使用木镐和石镐挖掘，这将会在下一个版本修复。
 
@@ -31,4 +31,4 @@ Bntoylort@outlook.com<br/>
 - QQ：<br/>
 3553413882（备注来意）<br/>
 
-##因为开发此 Mod 的作者只有一人，所以BUG可能会多，如果你在本Mod发现任何BUG，或者有新的想法，欢迎发送邮件或添加我的QQ。
+## 因为开发此 Mod 的作者只有一人，所以BUG可能会多，如果你在本Mod发现任何BUG，或者有新的想法，欢迎发送邮件或添加我的QQ。
