@@ -2,8 +2,8 @@
 
 A Fabric Mod of Minecraft
 
-[点我转到中文的README页面](https://github.com/MrShieh-X/more-gems-tools-armor/README-zh.md) <br/>
-[Click me to go to the user manual of this mod (Chinese)](https://github.com/MrShieh-X/more-gems-tools-armor/manual-zh.md) <br/>
+[点我转到中文的README页面](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/README-zh.md) <br/>
+[Click me to go to the user manual of this mod (Chinese)](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/manual-zh.md) <br/>
 ## Copyright
 MrShiehX own this mod's copyright.<br/>
 Anyone can take advices of this mod to us.
@@ -20,7 +20,7 @@ This mod requires:
 * Minecraft 1.16.2 (We aren't sure if 1.16 runs out of it);
 * Fabric loader (better if 0.9.0 or above).
 
-##BUG Found
+## BUG Found
 - The six ore (please refer to the manual for details) can be mined with stone pickaxe and wooden pickaxe. Our goal is to prevent it from being mined with wooden pickaxe and stone pickaxe. This will be fixed in the next version.
 - The five gem blocks (please see the manual for details) can be mined with stone pickaxe and wooden pickaxe. Our goal is to prevent it from being mined with wooden pickaxe and stone pickaxe. This will be fixed in the next version.
 
@@ -33,5 +33,5 @@ Bntoylort@outlook.com<br/>
 - QQ:<br/>
 3553413882 (Remember to tell me why you want to add me)<br/>
 
-##Since there is only one author who developed this mod, there may be many bugs. If you find any bugs in this mod or have new ideas, please send an email or add my QQ.
-"# more-gems-tools-armor" 
+## Since there is only one author who developed this mod, there may be many bugs. If you find any bugs in this mod or have new ideas, please send an email or add my QQ."# more-gems-tools-armor" 
+"# moregemstoolsarmor" 
