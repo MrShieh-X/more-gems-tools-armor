@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SBP",
+    "RIY",
+    "#D#"
+  ],
+  "key": {
+    "S": {
+      "item": "moregemstoolsarmor:sapphire"
+    },
+    "B": {
+      "item": "moregemstoolsarmor:brown_gem"
+    },
+    "P": {
+      "item": "moregemstoolsarmor:purple_gem"
+    },
+    "R": {
+      "item": "moregemstoolsarmor:ruby"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "item": "moregemstoolsarmor:yellow_gem"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "#": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "result": {
+    "item": "moregemstoolsarmor:item_upgrade_table"
+  }
+}

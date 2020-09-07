@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "moregemstoolsarmor",
+  "version": "1.0",
+
+  "name": "More Gems Tools Armor",
+  "description": "More gems, tools and armor.\n更多宝石、工具和盔甲。\n我的邮箱（My mail）：Bntoylort@outlook.com",
+  "authors": [
+    "MrShiehX"
+  ],
+  "contact": {
+    "homepage": "https://mrshieh-x.github.io/",
+    "sources": "https://github.com/MrShieh-X/more-gems-tools-armor"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/moregemstoolsarmor/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mrshiehx.mcmods.moregemstoolsarmor.MoreGemsToolsArmor"
+    ]
+  },
+  "mixins": [
+    "moregemstoolsarmor.mixins.json"
+  ],
+
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

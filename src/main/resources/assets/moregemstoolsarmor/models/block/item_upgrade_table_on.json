@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "moregemstoolsarmor:block/item_upgrade_table_top",
+    "front": "moregemstoolsarmor:block/item_upgrade_table_front_on",
+    "side": "moregemstoolsarmor:block/item_upgrade_table_side"
+  }
+}
