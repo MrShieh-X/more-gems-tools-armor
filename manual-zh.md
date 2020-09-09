@@ -57,7 +57,7 @@ moregemstoolsarmor:sapphire_block
 #####如何合成
 在可以工作台放置九个蓝宝石即可获得一个蓝宝石块。
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####棕宝石块
 #####物品ID
 moregemstoolsarmor:brown_gem_block
@@ -66,7 +66,7 @@ moregemstoolsarmor:brown_gem_block
 #####如何合成
 在可以工作台放置九个棕宝石即可获得一个棕宝石块。
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####紫宝石块
 #####物品ID
 moregemstoolsarmor:purple_gem_block
@@ -75,7 +75,7 @@ moregemstoolsarmor:purple_gem_block
 #####如何合成
 在可以工作台放置九个紫宝石即可获得一个紫宝石块。
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####红宝石块
 #####物品ID
 moregemstoolsarmor:ruby_block
@@ -84,7 +84,7 @@ moregemstoolsarmor:ruby_block
 #####如何合成
 在可以工作台放置九个红宝石即可获得一个红宝石块。
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####黄宝石块
 #####物品ID
 moregemstoolsarmor:yellow_gem_block
@@ -93,7 +93,7 @@ moregemstoolsarmor:yellow_gem_block
 #####如何合成
 在可以工作台放置九个黄宝石即可获得一个黄宝石块。
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####蓝宝石矿石
 #####物品ID
 moregemstoolsarmor:sapphire_ore
@@ -102,7 +102,7 @@ moregemstoolsarmor:sapphire_ore
 #####防爆度
 3
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####棕宝石矿石
 #####物品ID
 moregemstoolsarmor:brown_gem_ore
@@ -111,7 +111,7 @@ moregemstoolsarmor:brown_gem_ore
 #####防爆度
 3
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####紫宝石矿石
 #####物品ID
 moregemstoolsarmor:purple_gem_ore
@@ -120,7 +120,7 @@ moregemstoolsarmor:purple_gem_ore
 #####防爆度
 3
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####红宝石矿石
 #####物品ID
 moregemstoolsarmor:ruby_ore
@@ -129,7 +129,7 @@ moregemstoolsarmor:ruby_ore
 #####防爆度
 3
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####黄宝石矿石
 #####物品ID
 moregemstoolsarmor:sapphire_ore
@@ -138,7 +138,7 @@ moregemstoolsarmor:sapphire_ore
 #####防爆度
 3
 #####额外
-必须要使用工具来挖掘。
+必须要使用木镐、石镐除外的工具来挖掘。
 ####经验之石
 #####物品ID
 moregemstoolsarmor:stone_of_experience
@@ -147,7 +147,7 @@ moregemstoolsarmor:stone_of_experience
 #####防爆度
 6
 #####额外
-必须要使用工具来挖掘。<br/>
+必须要使用木镐、石镐除外的工具来挖掘。<br/>
 添加的矿石不能保证每一个在现实世界都真实存在。
 
 ###盔甲：

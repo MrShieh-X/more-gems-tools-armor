@@ -7,10 +7,16 @@ import com.mrshiehx.mcmods.moregemstoolsarmor.item.food.EnchantedAppleItem;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAAxeItem;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAHoeItem;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAPickaxeItem;
+import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAToolTags;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.material.MGTAToolMaterial;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
+import net.fabricmc.fabric.impl.tool.attribute.ToolManagerImpl;
+import net.fabricmc.fabric.impl.tool.attribute.handlers.ModdedToolsModdedBlocksToolHandler;
+import net.fabricmc.fabric.impl.tool.attribute.handlers.ModdedToolsVanillaBlocksToolHandler;
+import net.fabricmc.fabric.impl.tool.attribute.handlers.VanillaToolsModdedBlocksToolHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -24,6 +30,9 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class MoreGemsToolsArmor implements ModInitializer {
 	public static final String namespace="moregemstoolsarmor";
@@ -32,17 +41,17 @@ public class MoreGemsToolsArmor implements ModInitializer {
 	public static final Item purpleGem=new Item(new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).maxCount(64));//紫宝石
 	public static final Item ruby=new Item(new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).maxCount(64));//红宝石
 	public static final Item yellowGem=new Item(new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).maxCount(64));//黄宝石
-	public static final Block sapphireBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool());//蓝宝石块
-	public static final Block brownGemBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool());//棕宝石块
-	public static final Block purpleGemBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool());//紫宝石块
-	public static final Block rubyBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool());//红宝石块
-	public static final Block yellowGemBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool());//黄宝石块
-	public static final Block sapphireOre=new SapphireOre(OreBlock.Settings.of(Material.STONE).strength(3,3).requiresTool());//蓝宝石矿石
-	public static final Block brownGemOre=new BrownGemOre(OreBlock.Settings.of(Material.STONE).strength(3,3).requiresTool());//棕宝石矿石
-	public static final Block purpleGemOre=new PurpleGemOre(OreBlock.Settings.of(Material.STONE).strength(3,3).requiresTool());//紫宝石矿石
-	public static final Block rubyOre=new RubyOre(OreBlock.Settings.of(Material.STONE).strength(3,3).requiresTool());//红宝石矿石
-	public static final Block yellowGemOre=new YellowGemOre(OreBlock.Settings.of(Material.STONE).strength(3,3).requiresTool());//黄宝石矿石
-	public static final Block stoneOfExperience=new StoneOfExperience(OreBlock.Settings.of(Material.STONE).strength(3,6).requiresTool());//经验之石
+	public static final Block sapphireBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//蓝宝石块
+	public static final Block brownGemBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//棕宝石块
+	public static final Block purpleGemBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//紫宝石块
+	public static final Block rubyBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//红宝石块
+	public static final Block yellowGemBlock=new Block(FabricBlockSettings.of(Material.METAL).strength(5).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//黄宝石块
+	public static final Block sapphireOre=new SapphireOre(FabricBlockSettings.of(Material.STONE).strength(3,3).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//蓝宝石矿石
+	public static final Block brownGemOre=new BrownGemOre(FabricBlockSettings.of(Material.STONE).strength(3,3).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//棕宝石矿石
+	public static final Block purpleGemOre=new PurpleGemOre(FabricBlockSettings.of(Material.STONE).strength(3,3).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//紫宝石矿石
+	public static final Block rubyOre=new RubyOre(FabricBlockSettings.of(Material.STONE).strength(3,3).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//红宝石矿石
+	public static final Block yellowGemOre=new YellowGemOre(FabricBlockSettings.of(Material.STONE).strength(3,3).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//黄宝石矿石
+	public static final Block stoneOfExperience=new StoneOfExperience(FabricBlockSettings.of(Material.STONE).strength(3,6).requiresTool().breakByTool(MGTAToolTags.PICKAXES,2));//经验之石
 	public static final ArmorItem sapphireHelmet=new ArmorItem(MGTAArmorMaterials.SAPPHIRE, EquipmentSlot.HEAD,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
 	public static final ArmorItem sapphireChestplate=new ArmorItem(MGTAArmorMaterials.SAPPHIRE, EquipmentSlot.CHEST,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
 	public static final ArmorItem sapphireLeggings=new ArmorItem(MGTAArmorMaterials.SAPPHIRE, EquipmentSlot.LEGS,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
@@ -119,6 +128,7 @@ public class MoreGemsToolsArmor implements ModInitializer {
 	public static final Item enchantedYellowGemApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_YELLOW_GEM_APPLE));
 	public static final Item enchantedQuartzApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_QUARTZ_APPLE));
 	public static final Item enchantedNetheriteApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_NETHERITE_APPLE));
+
 
 	/*public static BlockEntityType<ItemUpgradeTableContainerBlockEntity> itemUpgradeTableBlockEntityType;
 	public static final Block itemUpgradeTable=new ItemUpgradeTable(FabricBlockSettings.of(Material.STONE).strength(3.5F));
@@ -412,6 +422,26 @@ public class MoreGemsToolsArmor implements ModInitializer {
 
 			return ((ItemUpgradeTableContainerBlockEntity) Objects.requireNonNull(player.world.getBlockEntity(buf.readBlockPos()))).createContainer(syncId, player.inventory);
 		}));*/
+
+
+
+		ToolManagerImpl.general().register(new ModdedToolsModdedBlocksToolHandler());
+		ToolManagerImpl.general().register(new VanillaToolsModdedBlocksToolHandler());
+		ToolManagerImpl.tag(MGTAToolTags.PICKAXES).register(new ModdedToolsVanillaBlocksToolHandler(
+				Arrays.asList(
+						Items.WOODEN_PICKAXE,
+						Items.STONE_PICKAXE,
+						Items.IRON_PICKAXE,
+						Items.DIAMOND_PICKAXE,
+						Items.NETHERITE_PICKAXE,
+						sapphirePickaxe,
+						brownGemPickaxe,
+						purpleGemPickaxe,
+						rubyPickaxe,
+						yellowGemPickaxe,
+						emeraldPickaxe
+				)
+		));
 	}
 
 

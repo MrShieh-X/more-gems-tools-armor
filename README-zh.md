@@ -3,13 +3,15 @@
 
 [Click me to go to the README in English](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/README.md) <br/>
 [点我转到本Mod的使用手册](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/manual-zh.md) <br/>
+[点我转到本Mod的更新日志](https://github.com/MrShieh-X/more-gems-tools-armor/blob/master/update_logs-zh.md) <br/>
 ## 版权
 MrShiehX 拥有该 Mod 的版权。<br/>
 任何人都可以对此模组提出意见和建议。
 ## 版本
 最新版本：<br/>
-<b>1.0 (2020年09月06日)</b><br/>
+<b>1.0.1 (2020年09月09日)</b><br/>
 历史版本：<br/>
+<b>1.0.1 (2020年09月09日)</b><br/>
 <b>1.0 (2020年09月06日)（第一个版本）</b><br/>
 
 对于本模组不支持1.15.2及更低版本的问题我们十分抱歉，因为本 Mod 有新版的矿物生成代码。<br/>
@@ -17,10 +19,6 @@ MrShiehX 拥有该 Mod 的版权。<br/>
 * Fabric api；
 * Minecraft 1.16.2（我们（指我一个人）不确定1.16的其他版本是否兼容）；
 * Fabric loader（0.9.0+）。
-
-## 已发现的BUG
-- 六大矿石（具体请看手册）能使用石镐和木镐来挖掘，我们（指我一个人）的目标是使它不能使用木镐和石镐挖掘，这将会在下一个版本修复。
-- 五大宝石方块（具体请看手册）能使用石镐和木镐来挖掘，我们（指我一个人）的目标是使它不能使用木镐和石镐挖掘，这将会在下一个版本修复。
 
 ## 关于作者
 MrShiehX<br/>

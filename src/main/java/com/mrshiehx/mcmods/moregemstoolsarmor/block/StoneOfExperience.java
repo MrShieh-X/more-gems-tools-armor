@@ -11,7 +11,7 @@ import net.minecraft.util.math.MathHelper;
 
 import java.util.Random;
 
-public class StoneOfExperience extends OreBlock {
+public class StoneOfExperience extends OreBlock  {
     public StoneOfExperience(Settings settings) {
         super(settings);
     }
