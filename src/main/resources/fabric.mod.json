@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "id": "moregemstoolsarmor",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "name": "More Gems Tools Armor",
-  "description": "More gems, tools and armor.\n鏇村瀹濈煶銆佸伐鍏峰拰鐩旂敳銆俓n鎴戠殑閭锛圡y mail锛夛細Bntoylort@outlook.com",
+  "description": "More gems, tools and armor.\n更多宝石、工具和盔甲。\n我的邮箱：\nMy mail:\nBntoylort@outlook.com",
   "authors": [
     "MrShiehX"
   ],
   "contact": {
-    "homepage": "https://mrshieh-x.github.io/",
+    "homepage": "https://mrshieh-x.github.io/minecraft/mods/more-gems-tools-armor",
     "sources": "https://github.com/MrShieh-X/more-gems-tools-armor"
   },
 
@@ -28,7 +28,7 @@
 
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.9.0",
     "minecraft": "1.16.x"
   },
   "suggests": {
