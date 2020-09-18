@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "tag": "moregemstoolsarmor:gems"
+    }
+  },
+  "result": {
+    "item": "moregemstoolsarmor:mixed_gem_leggings"
+  }
+}

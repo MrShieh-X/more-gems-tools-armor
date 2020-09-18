@@ -1,8 +1,8 @@
 package com.mrshiehx.mcmods.moregemstoolsarmor;
 
 import com.mrshiehx.mcmods.moregemstoolsarmor.block.*;
-import com.mrshiehx.mcmods.moregemstoolsarmor.item.MGTAArmorMaterials;
-import com.mrshiehx.mcmods.moregemstoolsarmor.item.MGTAFoodComponents;
+import com.mrshiehx.mcmods.moregemstoolsarmor.item.armor.material.MGTAArmorMaterials;
+import com.mrshiehx.mcmods.moregemstoolsarmor.item.food.components.MGTAFoodComponents;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.food.EnchantedAppleItem;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAAxeItem;
 import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAHoeItem;
@@ -12,7 +12,6 @@ import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.material.MGTAToolMateria
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.fabricmc.fabric.impl.tool.attribute.ToolManagerImpl;
 import net.fabricmc.fabric.impl.tool.attribute.handlers.ModdedToolsModdedBlocksToolHandler;
 import net.fabricmc.fabric.impl.tool.attribute.handlers.ModdedToolsVanillaBlocksToolHandler;
@@ -30,7 +29,6 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -128,25 +126,20 @@ public class MoreGemsToolsArmor implements ModInitializer {
 	public static final Item enchantedYellowGemApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_YELLOW_GEM_APPLE));
 	public static final Item enchantedQuartzApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_QUARTZ_APPLE));
 	public static final Item enchantedNetheriteApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_NETHERITE_APPLE));
+	public static final Item mixedGemApple=new Item((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.RARE).food(MGTAFoodComponents.MIXED_GEM_APPLE));
+	public static final Item enchantedMixedGemApple=new EnchantedAppleItem((new Item.Settings()).group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).rarity(Rarity.EPIC).food(MGTAFoodComponents.ENCHANTED_MIXED_GEM_APPLE));
 
 
-	/*public static BlockEntityType<ItemUpgradeTableContainerBlockEntity> itemUpgradeTableBlockEntityType;
-	public static final Block itemUpgradeTable=new ItemUpgradeTable(FabricBlockSettings.of(Material.STONE).strength(3.5F));
-*/
+	public static final ToolItem mixedGemSword=new SwordItem(MGTAToolMaterial.MIXED_GEM,4,-2.0F,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ToolItem mixedGemShovel=new ShovelItem(MGTAToolMaterial.MIXED_GEM,1.6F,-2.8F,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ToolItem mixedGemPickaxe=new MGTAPickaxeItem(MGTAToolMaterial.MIXED_GEM,1,-2.6F,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ToolItem mixedGemAxe=new MGTAAxeItem(MGTAToolMaterial.MIXED_GEM,6,-2.8F,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ToolItem mixedGemHoe=new MGTAHoeItem(MGTAToolMaterial.MIXED_GEM,-3,0.0F,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
 
-
-
-
-
-
-	/*private static ToIntFunction<BlockState> createLightLevelFromBlockState(int litLevel) {
-		return (blockState) -> {
-			return (Boolean)blockState.get(Properties.LIT) ? litLevel : 0;
-		};
-	}*/
-
-
-
+	public static final ArmorItem mixedGemHelmet=new ArmorItem(MGTAArmorMaterials.MIXED_GEM, EquipmentSlot.HEAD,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ArmorItem mixedGemChestplate=new ArmorItem(MGTAArmorMaterials.MIXED_GEM, EquipmentSlot.CHEST,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ArmorItem mixedGemLeggings=new ArmorItem(MGTAArmorMaterials.MIXED_GEM, EquipmentSlot.LEGS,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
+	public static final ArmorItem mixedGemBoots=new ArmorItem(MGTAArmorMaterials.MIXED_GEM, EquipmentSlot.FEET,new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP));
 
 	public static ConfiguredFeature<?, ?> ORE_BROWN_GEM_ORE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
 					brownGemOre.getDefaultState(),
@@ -253,10 +246,14 @@ public class MoreGemsToolsArmor implements ModInitializer {
 				stacks.add(new ItemStack(MoreGemsToolsArmor.yellowGemChestplate));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.yellowGemLeggings));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.yellowGemBoots));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldHelmet));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldChestplate));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldLeggings));
-				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldHelmet));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldBoots));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemHelmet));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemChestplate));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemLeggings));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemBoots));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.sapphireSword));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.sapphireShovel));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.sapphirePickaxe));
@@ -287,6 +284,11 @@ public class MoreGemsToolsArmor implements ModInitializer {
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldPickaxe));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldAxe));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldHoe));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemSword));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemShovel));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemPickaxe));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemAxe));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemHoe));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.diamondApple));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.ironApple));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.emeraldApple));
@@ -307,6 +309,8 @@ public class MoreGemsToolsArmor implements ModInitializer {
 				stacks.add(new ItemStack(MoreGemsToolsArmor.enchantedYellowGemApple));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.enchantedQuartzApple));
 				stacks.add(new ItemStack(MoreGemsToolsArmor.enchantedNetheriteApple));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.mixedGemApple));
+				stacks.add(new ItemStack(MoreGemsToolsArmor.enchantedMixedGemApple));
 				//stacks.add(new ItemStack(MoreGemsToolsArmor.itemUpgradeTable));
 			}).build();
 
@@ -414,6 +418,18 @@ public class MoreGemsToolsArmor implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier(namespace, "enchanted_yellow_gem_apple"),enchantedYellowGemApple);
 		Registry.register(Registry.ITEM, new Identifier(namespace, "enchanted_quartz_apple"),enchantedQuartzApple);
 		Registry.register(Registry.ITEM, new Identifier(namespace, "enchanted_netherite_apple"),enchantedNetheriteApple);
+
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_sword"),mixedGemSword);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_shovel"),mixedGemShovel);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_pickaxe"),mixedGemPickaxe);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_axe"),mixedGemAxe);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_hoe"),mixedGemHoe);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_helmet"),mixedGemHelmet);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_chestplate"), mixedGemChestplate);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_leggings"),mixedGemLeggings);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_boots"),mixedGemBoots);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "mixed_gem_apple"),mixedGemApple);
+		Registry.register(Registry.ITEM, new Identifier(namespace, "enchanted_mixed_gem_apple"),enchantedMixedGemApple);
 		/*Registry.register(Registry.BLOCK, new Identifier(namespace, "item_upgrade_table"), itemUpgradeTable);
 		Registry.register(Registry.ITEM, new Identifier(namespace, "item_upgrade_table"), new BlockItem(itemUpgradeTable, new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP)));
 		itemUpgradeTableBlockEntityType=Registry.register(Registry.BLOCK_ENTITY_TYPE,new Identifier(namespace,"item_upgrade_table_block_entity_type"),BlockEntityType.Builder.create(ItemUpgradeTableContainerBlockEntity::new,itemUpgradeTable).build(null));
@@ -428,7 +444,7 @@ public class MoreGemsToolsArmor implements ModInitializer {
 		ToolManagerImpl.general().register(new ModdedToolsModdedBlocksToolHandler());
 		ToolManagerImpl.general().register(new VanillaToolsModdedBlocksToolHandler());
 		ToolManagerImpl.tag(MGTAToolTags.PICKAXES).register(new ModdedToolsVanillaBlocksToolHandler(
-				Arrays.asList(
+				Arrays.asList( 
 						Items.WOODEN_PICKAXE,
 						Items.STONE_PICKAXE,
 						Items.IRON_PICKAXE,
@@ -439,7 +455,8 @@ public class MoreGemsToolsArmor implements ModInitializer {
 						purpleGemPickaxe,
 						rubyPickaxe,
 						yellowGemPickaxe,
-						emeraldPickaxe
+						emeraldPickaxe,
+						mixedGemPickaxe
 				)
 		));
 	}

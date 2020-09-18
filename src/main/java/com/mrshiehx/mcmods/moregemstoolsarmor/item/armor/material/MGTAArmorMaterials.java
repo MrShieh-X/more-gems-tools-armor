@@ -1,4 +1,4 @@
-package com.mrshiehx.mcmods.moregemstoolsarmor.item;
+package com.mrshiehx.mcmods.moregemstoolsarmor.item.armor.material;
 
 import com.mrshiehx.mcmods.moregemstoolsarmor.MoreGemsToolsArmor;
 import net.fabricmc.api.EnvType;
@@ -32,6 +32,9 @@ public enum MGTAArmorMaterials implements ArmorMaterial {
    }),
    EMERALD("emerald", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(Items.EMERALD);
+   }),
+   MIXED_GEM("mixed_gem", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.sapphire,MoreGemsToolsArmor.brownGem,MoreGemsToolsArmor.purpleGem,MoreGemsToolsArmor.ruby,MoreGemsToolsArmor.yellowGem);
    });
 
    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

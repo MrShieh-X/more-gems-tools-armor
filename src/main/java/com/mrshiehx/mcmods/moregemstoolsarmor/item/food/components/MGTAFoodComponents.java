@@ -1,4 +1,4 @@
-package com.mrshiehx.mcmods.moregemstoolsarmor.item;
+package com.mrshiehx.mcmods.moregemstoolsarmor.item.food.components;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -25,6 +25,8 @@ public class MGTAFoodComponents {
     public static final FoodComponent ENCHANTED_YELLOW_GEM_APPLE;
     public static final FoodComponent ENCHANTED_QUARTZ_APPLE;
     public static final FoodComponent ENCHANTED_NETHERITE_APPLE;
+    public static final FoodComponent MIXED_GEM_APPLE;
+    public static final FoodComponent ENCHANTED_MIXED_GEM_APPLE;
 
 
 
@@ -104,6 +106,16 @@ public class MGTAFoodComponents {
                 statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 3600, 0), 1.0F)
                 .alwaysEdible().build();
         ENCHANTED_YELLOW_GEM_APPLE = (new FoodComponent.Builder()).hunger(6).saturationModifier(1.2F).
+                statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 1), 1.0F).
+                statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 7200, 0), 1.0F).
+                statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 7200, 0), 1.0F).
+                statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 3600, 3), 1.0F)
+                .alwaysEdible().build();
+        MIXED_GEM_APPLE = (new FoodComponent.Builder()).hunger(6).saturationModifier(1.2F).statusEffect(new StatusEffectInstance(
+                StatusEffects.REGENERATION, 200, 1), 1.0F).
+                statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 3600, 0), 1.0F)
+                .alwaysEdible().build();
+        ENCHANTED_MIXED_GEM_APPLE = (new FoodComponent.Builder()).hunger(6).saturationModifier(1.2F).
                 statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 1), 1.0F).
                 statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 7200, 0), 1.0F).
                 statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 7200, 0), 1.0F).

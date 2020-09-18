@@ -1,6 +1,7 @@
 package com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.material;
 
 import com.mrshiehx.mcmods.moregemstoolsarmor.MoreGemsToolsArmor;
+import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAToolTags;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -26,6 +27,9 @@ public enum MGTAToolMaterial implements ToolMaterial {
     }),
     YELLOW_GEM(3, 1710, 9.0F, 4.0F, 18, () -> {
         return Ingredient.ofItems(MoreGemsToolsArmor.yellowGem);
+    }),
+    MIXED_GEM(3, 1710, 9.0F, 4.0F, 18, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.sapphire,MoreGemsToolsArmor.brownGem,MoreGemsToolsArmor.purpleGem,MoreGemsToolsArmor.ruby,MoreGemsToolsArmor.yellowGem);
     });
 
     private final int miningLevel;

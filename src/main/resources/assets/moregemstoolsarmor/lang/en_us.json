@@ -1,4 +1,5 @@
 {
+  "itemGroup.moregemstoolsarmor.main_itemgroup" : "More Gems Tools Armor",
   "item.moregemstoolsarmor.sapphire": "Sapphire",
   "item.moregemstoolsarmor.brown_gem": "Brown Gem",
   "item.moregemstoolsarmor.purple_gem": "Purple Gem",
@@ -15,7 +16,6 @@
   "block.moregemstoolsarmor.ruby_ore": "Ruby Ore",
   "block.moregemstoolsarmor.yellow_gem_ore": "Yellow Gem Ore",
   "block.moregemstoolsarmor.stone_of_experience": "Stone Of Experience",
-  "itemGroup.moregemstoolsarmor.main_itemgroup" : "More Gems Tools Armor",
   "item.moregemstoolsarmor.emerald_helmet": "Emerald Helmet",
   "item.moregemstoolsarmor.emerald_chestplate": "Emerald Chestplate",
   "item.moregemstoolsarmor.emerald_leggings": "Emerald Leggings",
@@ -91,5 +91,16 @@
   "item.moregemstoolsarmor.enchanted_quartz_apple": "Enchanted Quartz Apple",
   "item.moregemstoolsarmor.enchanted_netherite_apple": "Enchanted Netherite Apple",
   "block.moregemstoolsarmor.item_upgrade_table": "Item Upgrade Table",
-  "container.item_upgrade_table": "Item Upgrade Table"
+  "container.item_upgrade_table": "Item Upgrade Table",
+  "item.moregemstoolsarmor.mixed_gem_sword": "Mixed Gem Sword",
+  "item.moregemstoolsarmor.mixed_gem_shovel": "Mixed Gem Shovel",
+  "item.moregemstoolsarmor.mixed_gem_pickaxe": "Mixed Gem Pickaxe",
+  "item.moregemstoolsarmor.mixed_gem_axe": "Mixed Gem Axe",
+  "item.moregemstoolsarmor.mixed_gem_hoe": "Mixed Gem Hoe",
+  "item.moregemstoolsarmor.mixed_gem_apple": "Mixed Gem Apple",
+  "item.moregemstoolsarmor.enchanted_mixed_gem_apple": "Enchanted Mixed Gem Apple",
+  "item.moregemstoolsarmor.mixed_gem_helmet": "Mixed Gem Helmet",
+  "item.moregemstoolsarmor.mixed_gem_chestplate": "Mixed Gem Chestplate",
+  "item.moregemstoolsarmor.mixed_gem_leggings": "Mixed Gem Leggings",
+  "item.moregemstoolsarmor.mixed_gem_boots": "Mixed Gem Boots"
 }

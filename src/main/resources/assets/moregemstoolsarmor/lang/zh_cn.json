@@ -91,5 +91,16 @@
   "item.moregemstoolsarmor.enchanted_quartz_apple": "附魔石英苹果",
   "item.moregemstoolsarmor.enchanted_netherite_apple": "附魔下界合金苹果",
   "block.moregemstoolsarmor.item_upgrade_table": "物品升级台",
-  "container.item_upgrade_table": "物品升级台"
+  "container.item_upgrade_table": "物品升级台",
+  "item.moregemstoolsarmor.mixed_gem_sword": "混合宝石剑",
+  "item.moregemstoolsarmor.mixed_gem_shovel": "混合宝石锹",
+  "item.moregemstoolsarmor.mixed_gem_pickaxe": "混合宝石镐",
+  "item.moregemstoolsarmor.mixed_gem_axe": "混合宝石斧",
+  "item.moregemstoolsarmor.mixed_gem_hoe": "混合宝石锄",
+  "item.moregemstoolsarmor.mixed_gem_apple": "混合宝石苹果",
+  "item.moregemstoolsarmor.enchanted_mixed_gem_apple": "附魔混合宝石苹果",
+  "item.moregemstoolsarmor.mixed_gem_helmet": "混合宝石头盔",
+  "item.moregemstoolsarmor.mixed_gem_chestplate": "混合宝石胸甲",
+  "item.moregemstoolsarmor.mixed_gem_leggings": "混合宝石护腿",
+  "item.moregemstoolsarmor.mixed_gem_boots": "混合宝石靴子"
 }
