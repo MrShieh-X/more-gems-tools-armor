@@ -22,7 +22,7 @@ We'are sorry this mod isn't available in 1.15.2 or below, because this mod has a
 This mod requires: 
 * Fabric api;
 * Minecraft 1.16.2 (We aren't sure if 1.16 runs out of it);
-* Fabric loader (better if 0.9.0 or above).
+* Fabric loader (0.9.3+build.207 or above).
 
 ## About Author
 MrShiehX<br/>
