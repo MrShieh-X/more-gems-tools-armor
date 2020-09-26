@@ -1,5 +1,6 @@
-package net.fabricmc.fabric.test.screenhandler;
+package com.mrshiehx.mcmods.moregemstoolsarmor.slot;
 
+import com.mrshiehx.mcmods.moregemstoolsarmor.screen.AbstractItemUpgradeTableScreenHandler;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

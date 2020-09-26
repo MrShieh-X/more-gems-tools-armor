@@ -1,5 +1,9 @@
-package net.fabricmc.fabric.test.screenhandler;
+package com.mrshiehx.mcmods.moregemstoolsarmor.screen;
 
+import com.mrshiehx.mcmods.moregemstoolsarmor.block.entity.AbstractItemUpgradeTableBlockEntity;
+import com.mrshiehx.mcmods.moregemstoolsarmor.slot.ItemUpgradeTableFuelSlot;
+import com.mrshiehx.mcmods.moregemstoolsarmor.slot.ItemUpgradeTableInputSlotFiller;
+import com.mrshiehx.mcmods.moregemstoolsarmor.slot.ItemUpgradeTableOutputSlot;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.entity.player.PlayerEntity;
@@ -9,10 +13,7 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeBookCategory;
-import net.minecraft.screen.AbstractRecipeScreenHandler;
-import net.minecraft.screen.ArrayPropertyDelegate;
-import net.minecraft.screen.PropertyDelegate;
-import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
@@ -20,7 +21,7 @@ import net.minecraft.world.World;
 public abstract class AbstractItemUpgradeTableScreenHandler extends AbstractRecipeScreenHandler<Inventory> {
    private final Inventory inventory;
    private final PropertyDelegate propertyDelegate;
-   protected final World world;
+   protected World world;
    private final RecipeType<? extends AbstractCookingRecipe> recipeType;
    private final RecipeBookCategory category;
 
@@ -37,9 +38,9 @@ public abstract class AbstractItemUpgradeTableScreenHandler extends AbstractReci
       this.inventory = inventory;
       this.propertyDelegate = propertyDelegate;
       this.world = playerInventory.player.world;
-      this.addSlot(new Slot(inventory, 0, 56, 17));
-      this.addSlot(new ItemUpgradeTableFuelSlot(this, inventory, 1, 56, 53));
-      this.addSlot(new ItemUpgradeTableOutputSlot(playerInventory.player, inventory, 2, 116, 35));
+      this.addSlot(new Slot(inventory, 0, 19, 37));
+      this.addSlot(new ItemUpgradeTableFuelSlot(this, inventory, 1, 56, 37));
+      this.addSlot(new ItemUpgradeTableOutputSlot(playerInventory.player, inventory, 2, 141, 37));
 
       int l;
       for(l = 0; l < 3; ++l) {
@@ -70,6 +71,9 @@ public abstract class AbstractItemUpgradeTableScreenHandler extends AbstractReci
       (new ItemUpgradeTableInputSlotFiller(this)).fillInputSlots(player, recipe, craftAll);
    }
 
+   public int getExtractant(){
+      return propertyDelegate.get(2);
+   }
    public boolean matches(Recipe<? super Inventory> recipe) {
       return recipe.matches(this.inventory, this.world);
    }
@@ -147,7 +151,7 @@ public abstract class AbstractItemUpgradeTableScreenHandler extends AbstractReci
       return this.world.getRecipeManager().getFirstMatch(this.recipeType, new SimpleInventory(new ItemStack[]{itemStack}), this.world).isPresent();
    }
 
-   protected boolean isFuel(ItemStack itemStack) {
+   public boolean isFuel(ItemStack itemStack) {
       return AbstractItemUpgradeTableBlockEntity.canUseAsFuel(itemStack);
    }
 

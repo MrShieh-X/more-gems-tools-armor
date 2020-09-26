@@ -1,4 +1,4 @@
-package net.fabricmc.fabric.test.screenhandler;
+package com.mrshiehx.mcmods.moregemstoolsarmor.recipe;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.EnvType;
@@ -13,8 +13,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.collection.DefaultedList;
-
 import org.jetbrains.annotations.Nullable;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;

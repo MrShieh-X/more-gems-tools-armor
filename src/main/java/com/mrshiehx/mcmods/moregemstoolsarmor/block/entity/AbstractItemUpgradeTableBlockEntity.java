@@ -1,7 +1,10 @@
-package net.fabricmc.fabric.test.screenhandler;
+package com.mrshiehx.mcmods.moregemstoolsarmor.block.entity;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.mrshiehx.mcmods.moregemstoolsarmor.MoreGemsToolsArmor;
+import com.mrshiehx.mcmods.moregemstoolsarmor.block.AbstractItemUpgradeTableBlock;
+import com.sun.istack.internal.Nullable;
 import it.unimi.dsi.fastutil.objects.Object2IntMap.Entry;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import it.unimi.dsi.fastutil.objects.ObjectIterator;
@@ -31,7 +34,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -97,66 +99,11 @@ public abstract class AbstractItemUpgradeTableBlockEntity extends LockableContai
 
    public static Map<Item, Integer> createFuelTimeMap() {
       Map<Item, Integer> map = Maps.newLinkedHashMap();
-      addFuel(map, (ItemConvertible)Items.LAVA_BUCKET, 20000);
-      addFuel(map, (ItemConvertible)Blocks.COAL_BLOCK, 16000);
-      addFuel(map, (ItemConvertible)Items.BLAZE_ROD, 2400);
-      addFuel(map, (ItemConvertible)Items.COAL, 1600);
-      addFuel(map, (ItemConvertible)Items.CHARCOAL, 1600);
-      addFuel(map, (Tag)ItemTags.LOGS, 300);
-      addFuel(map, (Tag)ItemTags.PLANKS, 300);
-      addFuel(map, (Tag)ItemTags.WOODEN_STAIRS, 300);
-      addFuel(map, (Tag)ItemTags.WOODEN_SLABS, 150);
-      addFuel(map, (Tag)ItemTags.WOODEN_TRAPDOORS, 300);
-      addFuel(map, (Tag)ItemTags.WOODEN_PRESSURE_PLATES, 300);
-      addFuel(map, (ItemConvertible)Blocks.OAK_FENCE, 300);
-      addFuel(map, (ItemConvertible)Blocks.BIRCH_FENCE, 300);
-      addFuel(map, (ItemConvertible)Blocks.SPRUCE_FENCE, 300);
-      addFuel(map, (ItemConvertible)Blocks.JUNGLE_FENCE, 300);
-      addFuel(map, (ItemConvertible)Blocks.DARK_OAK_FENCE, 300);
-      addFuel(map, (ItemConvertible)Blocks.ACACIA_FENCE, 300);
-      addFuel(map, (ItemConvertible)Blocks.OAK_FENCE_GATE, 300);
-      addFuel(map, (ItemConvertible)Blocks.BIRCH_FENCE_GATE, 300);
-      addFuel(map, (ItemConvertible)Blocks.SPRUCE_FENCE_GATE, 300);
-      addFuel(map, (ItemConvertible)Blocks.JUNGLE_FENCE_GATE, 300);
-      addFuel(map, (ItemConvertible)Blocks.DARK_OAK_FENCE_GATE, 300);
-      addFuel(map, (ItemConvertible)Blocks.ACACIA_FENCE_GATE, 300);
-      addFuel(map, (ItemConvertible)Blocks.NOTE_BLOCK, 300);
-      addFuel(map, (ItemConvertible)Blocks.BOOKSHELF, 300);
-      addFuel(map, (ItemConvertible)Blocks.LECTERN, 300);
-      addFuel(map, (ItemConvertible)Blocks.JUKEBOX, 300);
-      addFuel(map, (ItemConvertible)Blocks.CHEST, 300);
-      addFuel(map, (ItemConvertible)Blocks.TRAPPED_CHEST, 300);
-      addFuel(map, (ItemConvertible)Blocks.CRAFTING_TABLE, 300);
-      addFuel(map, (ItemConvertible)Blocks.DAYLIGHT_DETECTOR, 300);
-      addFuel(map, (Tag)ItemTags.BANNERS, 300);
-      addFuel(map, (ItemConvertible)Items.BOW, 300);
-      addFuel(map, (ItemConvertible)Items.FISHING_ROD, 300);
-      addFuel(map, (ItemConvertible)Blocks.LADDER, 300);
-      addFuel(map, (Tag)ItemTags.SIGNS, 200);
-      addFuel(map, (ItemConvertible)Items.WOODEN_SHOVEL, 200);
-      addFuel(map, (ItemConvertible)Items.WOODEN_SWORD, 200);
-      addFuel(map, (ItemConvertible)Items.WOODEN_HOE, 200);
-      addFuel(map, (ItemConvertible)Items.WOODEN_AXE, 200);
-      addFuel(map, (ItemConvertible)Items.WOODEN_PICKAXE, 200);
-      addFuel(map, (Tag)ItemTags.WOODEN_DOORS, 200);
-      addFuel(map, (Tag)ItemTags.BOATS, 1200);
-      addFuel(map, (Tag)ItemTags.WOOL, 100);
-      addFuel(map, (Tag)ItemTags.WOODEN_BUTTONS, 100);
-      addFuel(map, (ItemConvertible)Items.STICK, 100);
-      addFuel(map, (Tag)ItemTags.SAPLINGS, 100);
-      addFuel(map, (ItemConvertible)Items.BOWL, 100);
-      addFuel(map, (Tag)ItemTags.CARPETS, 67);
-      addFuel(map, (ItemConvertible)Blocks.DRIED_KELP_BLOCK, 4001);
-      addFuel(map, (ItemConvertible)Items.CROSSBOW, 300);
-      addFuel(map, (ItemConvertible)Blocks.BAMBOO, 50);
-      addFuel(map, (ItemConvertible)Blocks.DEAD_BUSH, 100);
-      addFuel(map, (ItemConvertible)Blocks.SCAFFOLDING, 400);
-      addFuel(map, (ItemConvertible)Blocks.LOOM, 300);
-      addFuel(map, (ItemConvertible)Blocks.BARREL, 300);
-      addFuel(map, (ItemConvertible)Blocks.CARTOGRAPHY_TABLE, 300);
-      addFuel(map, (ItemConvertible)Blocks.FLETCHING_TABLE, 300);
-      addFuel(map, (ItemConvertible)Blocks.SMITHING_TABLE, 300);
-      addFuel(map, (ItemConvertible)Blocks.COMPOSTER, 300);
+      addFuel(map, (ItemConvertible) MoreGemsToolsArmor.sapphireBlock, 2400);
+      addFuel(map, (ItemConvertible) MoreGemsToolsArmor.brownGemBlock, 2400);
+      addFuel(map, (ItemConvertible) MoreGemsToolsArmor.purpleGemBlock, 2400);
+      addFuel(map, (ItemConvertible) MoreGemsToolsArmor.rubyBlock, 2400);
+      addFuel(map, (ItemConvertible) MoreGemsToolsArmor.yellowGemBlock, 2400);
       return map;
    }
 
@@ -279,7 +226,7 @@ public abstract class AbstractItemUpgradeTableBlockEntity extends LockableContai
 
    }
 
-   protected boolean canAcceptRecipeOutput(@Nullable Recipe<?> recipe) {
+   protected boolean canAcceptRecipeOutput(@com.sun.istack.internal.Nullable Recipe<?> recipe) {
       if (!((ItemStack)this.inventory.get(0)).isEmpty() && recipe != null) {
          ItemStack itemStack = recipe.getOutput();
          if (itemStack.isEmpty()) {
@@ -301,7 +248,7 @@ public abstract class AbstractItemUpgradeTableBlockEntity extends LockableContai
       }
    }
 
-   private void craftRecipe(@Nullable Recipe<?> recipe) {
+   private void craftRecipe(@com.sun.istack.internal.Nullable Recipe<?> recipe) {
       if (recipe != null && this.canAcceptRecipeOutput(recipe)) {
          ItemStack itemStack = (ItemStack)this.inventory.get(0);
          ItemStack itemStack2 = recipe.getOutput();
@@ -349,7 +296,7 @@ public abstract class AbstractItemUpgradeTableBlockEntity extends LockableContai
       }
    }
 
-   public boolean canInsert(int slot, ItemStack stack, @Nullable Direction dir) {
+   public boolean canInsert(int slot, ItemStack stack, @com.sun.istack.internal.Nullable Direction dir) {
       return this.isValid(slot, stack);
    }
 
@@ -434,7 +381,7 @@ public abstract class AbstractItemUpgradeTableBlockEntity extends LockableContai
       this.inventory.clear();
    }
 
-   public void setLastRecipe(@Nullable Recipe<?> recipe) {
+   public void setLastRecipe(@com.sun.istack.internal.Nullable Recipe<?> recipe) {
       if (recipe != null) {
          Identifier identifier = recipe.getId();
          this.recipesUsed.addTo(identifier, 1);

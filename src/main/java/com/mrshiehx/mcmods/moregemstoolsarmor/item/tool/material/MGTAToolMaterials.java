@@ -1,7 +1,6 @@
 package com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.material;
 
 import com.mrshiehx.mcmods.moregemstoolsarmor.MoreGemsToolsArmor;
-import com.mrshiehx.mcmods.moregemstoolsarmor.item.tool.MGTAToolTags;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -9,7 +8,7 @@ import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
-public enum MGTAToolMaterial implements ToolMaterial {
+public enum MGTAToolMaterials implements ToolMaterial {
     EMERALD(3, 1710, 9.0F, 4.0F, 18, () -> {
         return Ingredient.ofItems(Items.EMERALD);
     }),
@@ -28,9 +27,30 @@ public enum MGTAToolMaterial implements ToolMaterial {
     YELLOW_GEM(3, 1710, 9.0F, 4.0F, 18, () -> {
         return Ingredient.ofItems(MoreGemsToolsArmor.yellowGem);
     }),
-    MIXED_GEM(3, 1710, 9.0F, 4.0F, 18, () -> {
+    MIXED_GEM(3, 1620, 8.0F, 3.6F, 14, () -> {
         return Ingredient.ofItems(MoreGemsToolsArmor.sapphire,MoreGemsToolsArmor.brownGem,MoreGemsToolsArmor.purpleGem,MoreGemsToolsArmor.ruby,MoreGemsToolsArmor.yellowGem);
-    });
+    }),
+    UPGRADED_EMERALD(3, 1830, 10.0F, 5.0F, 20, () -> {
+        return Ingredient.ofItems(Items.EMERALD_BLOCK);
+    }),
+    UPGRADED_BROWN_GEM(3, 1830, 10.0F, 5.0F, 20, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.brownGemBlock);
+    }),
+    UPGRADED_PURPLE_GEM(3, 1830, 10.0F, 5.0F, 20, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.purpleGemBlock);
+    }),
+    UPGRADED_SAPPHIRE(3, 1830, 10.0F, 5.0F, 20, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.sapphireBlock);
+    }),
+    UPGRADED_RUBY(3, 1830, 10.0F, 5.0F, 20, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.rubyBlock);
+    }),
+    UPGRADED_YELLOW_GEM(3, 1830, 10.0F, 5.0F, 20, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.yellowGemBlock);
+    }),
+    UPGRADED_MIXED_GEM(3, 1710, 9.0F, 4.0F, 18, () -> {
+        return Ingredient.ofItems(MoreGemsToolsArmor.sapphireBlock,MoreGemsToolsArmor.brownGemBlock,MoreGemsToolsArmor.purpleGemBlock,MoreGemsToolsArmor.rubyBlock,MoreGemsToolsArmor.yellowGemBlock);
+    });;
 
     private final int miningLevel;
     private final int itemDurability;
@@ -39,7 +59,7 @@ public enum MGTAToolMaterial implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    MGTAToolMaterial(int miningLevel, int itemDurability, float miningSpeedMultiplier, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    MGTAToolMaterials(int miningLevel, int itemDurability, float miningSpeedMultiplier, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeedMultiplier = miningSpeedMultiplier;

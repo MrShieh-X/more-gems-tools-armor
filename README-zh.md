@@ -20,7 +20,7 @@ MrShiehX 拥有该 Mod 的版权。<br/>
 本模组需要的软件配置有：
 * Fabric api；
 * Minecraft 1.16.2（我们（指我一个人）不确定1.16的其他版本是否兼容）；
-* Fabric loader（0.9.0+）。
+* Fabric loader（0.9.3+build.207及以上版本）。
 
 ## 关于作者
 MrShiehX<br/>

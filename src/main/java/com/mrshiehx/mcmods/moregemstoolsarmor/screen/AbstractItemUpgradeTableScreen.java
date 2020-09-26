@@ -1,10 +1,10 @@
-package net.fabricmc.fabric.test.screenhandler;
+package com.mrshiehx.mcmods.moregemstoolsarmor.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import com.mrshiehx.mcmods.moregemstoolsarmor.recipe.AbstractItemUpgradeTableRecipeBookScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
-import net.fabricmc.fabric.test.screenhandler.AbstractItemUpgradeTableRecipeBookScreen;
 import net.minecraft.client.gui.screen.recipebook.RecipeBookProvider;
 import net.minecraft.client.gui.screen.recipebook.RecipeBookWidget;
 import net.minecraft.client.gui.widget.TexturedButtonWidget;
@@ -24,10 +24,12 @@ public abstract class AbstractItemUpgradeTableScreen<T extends AbstractItemUpgra
    private boolean narrow;
    private final Identifier background;
 
+   private final int maxExtractant;
    public AbstractItemUpgradeTableScreen(T handler, AbstractItemUpgradeTableRecipeBookScreen recipeBook, PlayerInventory inventory, Text title, Identifier background) {
       super(handler, inventory, title);
       this.recipeBook = recipeBook;
       this.background = background;
+      maxExtractant=64;
    }
 
    public void init() {
@@ -35,11 +37,11 @@ public abstract class AbstractItemUpgradeTableScreen<T extends AbstractItemUpgra
       this.narrow = this.width < 379;
       this.recipeBook.initialize(this.width, this.height, this.client, this.narrow, (AbstractRecipeScreenHandler)this.handler);
       this.x = this.recipeBook.findLeftEdge(this.narrow, this.width, this.backgroundWidth);
-      this.addButton(new TexturedButtonWidget(this.x + 20, this.height / 2 - 49, 20, 18, 0, 0, 19, RECIPE_BUTTON_TEXTURE, (buttonWidget) -> {
+      this.addButton(new TexturedButtonWidget(this.x + 35, this.y+56, 20, 18, 0, 0, 19, RECIPE_BUTTON_TEXTURE, (buttonWidget) -> {
          this.recipeBook.reset(this.narrow);
          this.recipeBook.toggleOpen();
          this.x = this.recipeBook.findLeftEdge(this.narrow, this.width, this.backgroundWidth);
-         ((TexturedButtonWidget)buttonWidget).setPos(this.x + 20, this.height / 2 - 49);
+         ((TexturedButtonWidget)buttonWidget).setPos(this.x + 35, this.y+56);
       }));
       this.titleX = (this.backgroundWidth - this.textRenderer.getWidth((StringVisitable)this.title)) / 2;
    }
@@ -71,13 +73,11 @@ public abstract class AbstractItemUpgradeTableScreen<T extends AbstractItemUpgra
       int j = this.y;
       this.drawTexture(matrices, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight);
       int l;
-      if (((AbstractItemUpgradeTableScreenHandler)this.handler).isBurning()) {
-         l = ((AbstractItemUpgradeTableScreenHandler)this.handler).getFuelProgress();
-         this.drawTexture(matrices, i + 56, j + 36 + 12 - l, 176, 12 - l, 14, l + 1);
-      }
-
       l = ((AbstractItemUpgradeTableScreenHandler)this.handler).getCookProgress();
-      this.drawTexture(matrices, i + 79, j + 34, 176, 14, l + 1, 16);
+
+      float extractant = this.handler.getExtractant();
+      int len = (int) Math.ceil(l);
+      this.drawTexture(matrices, i + 77, j + 42, 0, 166, len, 6);
    }
 
    public boolean mouseClicked(double mouseX, double mouseY, int button) {

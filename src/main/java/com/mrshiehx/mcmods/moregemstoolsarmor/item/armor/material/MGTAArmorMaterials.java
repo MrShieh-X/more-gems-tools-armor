@@ -15,26 +15,47 @@ import java.util.function.Supplier;
 
 public enum MGTAArmorMaterials implements ArmorMaterial {
 
-   SAPPHIRE("sapphire", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   SAPPHIRE("sapphire", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(MoreGemsToolsArmor.sapphire);
    }),
-   BROWN_GEM("brown_gem", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   BROWN_GEM("brown_gem", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(MoreGemsToolsArmor.brownGem);
    }),
-   PURPLE_GEM("purple_gem", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   PURPLE_GEM("purple_gem", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(MoreGemsToolsArmor.purpleGem);
    }),
-   RUBY("ruby", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   RUBY("ruby", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(MoreGemsToolsArmor.ruby);
    }),
-   YELLOW_GEM("yellow_gem", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   YELLOW_GEM("yellow_gem", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(MoreGemsToolsArmor.yellowGem);
    }),
-   EMERALD("emerald", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   EMERALD("emerald", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(Items.EMERALD);
    }),
-   MIXED_GEM("mixed_gem", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+   MIXED_GEM("mixed_gem", 35, new int[]{3, 6, 8, 3}, 16, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
       return Ingredient.ofItems(MoreGemsToolsArmor.sapphire,MoreGemsToolsArmor.brownGem,MoreGemsToolsArmor.purpleGem,MoreGemsToolsArmor.ruby,MoreGemsToolsArmor.yellowGem);
+   }),
+   UPGRADED_SAPPHIRE("upgraded_sapphire", 42, new int[]{5, 8, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.sapphireBlock);
+   }),
+   UPGRADED_BROWN_GEM("upgraded_brown_gem", 42, new int[]{5, 8, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.brownGemBlock);
+   }),
+   UPGRADED_PURPLE_GEM("upgraded_purple_gem", 42, new int[]{5, 8, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.purpleGemBlock);
+   }),
+   UPGRADED_RUBY("upgraded_ruby", 42, new int[]{5, 8, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.rubyBlock);
+   }),
+   UPGRADED_YELLOW_GEM("upgraded_yellow_gem", 42, new int[]{5, 8, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.yellowGemBlock);
+   }),
+   UPGRADED_EMERALD("upgraded_emerald", 42, new int[]{5, 8, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(Items.EMERALD_BLOCK);
+   }),
+   UPGRADED_MIXED_GEM("upgraded_mixed_gem", 37, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {
+      return Ingredient.ofItems(MoreGemsToolsArmor.sapphireBlock,MoreGemsToolsArmor.brownGemBlock,MoreGemsToolsArmor.purpleGemBlock,MoreGemsToolsArmor.rubyBlock,MoreGemsToolsArmor.yellowGemBlock);
    });
 
    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

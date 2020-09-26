@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "moregemstoolsarmor:item/brown_gem_sword"
+  }
+}

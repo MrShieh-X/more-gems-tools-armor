@@ -1,34 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SBP",
-    "RIY",
+    "GGG",
+    "GIG",
     "#D#"
   ],
   "key": {
-    "S": {
-      "item": "moregemstoolsarmor:sapphire"
-    },
-    "B": {
-      "item": "moregemstoolsarmor:brown_gem"
-    },
-    "P": {
-      "item": "moregemstoolsarmor:purple_gem"
-    },
-    "R": {
-      "item": "moregemstoolsarmor:ruby"
+    "G": {
+      "tag": "moregemstoolsarmor:gems"
     },
     "I": {
       "item": "minecraft:iron_ingot"
-    },
-    "Y": {
-      "item": "moregemstoolsarmor:yellow_gem"
     },
     "D": {
       "item": "minecraft:diamond"
     },
     "#": {
-      "tag": "minecraft:stone_crafting_materials"
+      "item": "minecraft:cobblestone"
     }
   },
   "result": {

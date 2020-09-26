@@ -1,6 +1,7 @@
-package net.fabricmc.fabric.test.screenhandler;
+package com.mrshiehx.mcmods.moregemstoolsarmor.block;
 
 
+import com.mrshiehx.mcmods.moregemstoolsarmor.block.entity.ItemUpgradeTableBlockEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.AbstractBlock;
@@ -20,7 +21,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 public class ItemUpgradeTable extends AbstractItemUpgradeTableBlock {
-   protected ItemUpgradeTable(AbstractBlock.Settings settings) {
+   public ItemUpgradeTable(AbstractBlock.Settings settings) {
       super(settings);
    }
 
@@ -44,7 +45,7 @@ public class ItemUpgradeTable extends AbstractItemUpgradeTableBlock {
          double e = (double)pos.getY();
          double f = (double)pos.getZ() + 0.5D;
          if (random.nextDouble() < 0.1D) {
-            world.playSound(d, e, f, SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+            //world.playSound(d, e, f, SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
          }
 
          Direction direction = (Direction)state.get(FACING);

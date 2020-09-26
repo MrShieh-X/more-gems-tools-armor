@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "moregemstoolsarmor",
-  "version": "1.0.2",
+  "version": "1.2",
 
   "name": "More Gems Tools Armor",
   "description": "More gems, tools and armor.\n更多宝石、工具和盔甲。\n我的邮箱：\nMy mail:\nBntoylort@outlook.com",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.mrshiehx.mcmods.moregemstoolsarmor.MoreGemsToolsArmor"
+    ],
+    "client": [
+      "com.mrshiehx.mcmods.moregemstoolsarmor.client.MGTAClient"
     ]
   },
   "mixins": [
