@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:iron_apple"
+  },
+  "result": "moregemstoolsarmor:enchanted_iron_apple",
+  "experience": 50.0
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:brown_gem_boots"
+  },
+  "result": "moregemstoolsarmor:upgraded_brown_gem_boots",
+  "experience": 50.0
+}

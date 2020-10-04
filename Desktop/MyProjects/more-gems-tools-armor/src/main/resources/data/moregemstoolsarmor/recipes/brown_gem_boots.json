@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "moregemstoolsarmor:brown_gem"
+    }
+  },
+  "result": {
+    "item": "moregemstoolsarmor:brown_gem_boots"
+  }
+}

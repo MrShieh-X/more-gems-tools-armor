@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:emerald_leggings"
+  },
+  "result": "moregemstoolsarmor:upgraded_emerald_leggings",
+  "experience": 50.0
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:ruby_apple"
+  },
+  "result": "moregemstoolsarmor:enchanted_ruby_apple",
+  "experience": 50.0
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:sapphire_helmet"
+  },
+  "result": "moregemstoolsarmor:upgraded_sapphire_helmet",
+  "experience": 50.0
+}

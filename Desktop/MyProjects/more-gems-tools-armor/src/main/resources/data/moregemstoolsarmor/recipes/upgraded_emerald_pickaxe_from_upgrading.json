@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:emerald_pickaxe"
+  },
+  "result": "moregemstoolsarmor:upgraded_emerald_pickaxe",
+  "experience": 50.0
+}

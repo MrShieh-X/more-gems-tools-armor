@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:ruby_leggings"
+  },
+  "result": "moregemstoolsarmor:upgraded_ruby_leggings",
+  "experience": 50.0
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:yellow_gem_helmet"
+  },
+  "result": "moregemstoolsarmor:upgraded_yellow_gem_helmet",
+  "experience": 50.0
+}

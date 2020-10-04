@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:diamond_apple"
+  },
+  "result": "moregemstoolsarmor:enchanted_diamond_apple",
+  "experience": 50.0
+}
