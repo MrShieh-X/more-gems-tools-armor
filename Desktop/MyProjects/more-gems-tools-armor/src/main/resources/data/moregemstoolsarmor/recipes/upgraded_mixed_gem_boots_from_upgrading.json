@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:mixed_gem_boots"
-  },
-  "result": "moregemstoolsarmor:upgraded_mixed_gem_boots",
-  "experience": 50.0
-}

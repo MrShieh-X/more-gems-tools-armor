@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:ruby_axe"
-  },
-  "result": "moregemstoolsarmor:upgraded_sapphire_axe",
-  "experience": 50.0
-}

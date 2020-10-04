@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:emerald_boots"
-  },
-  "result": "moregemstoolsarmor:upgraded_emerald_boots",
-  "experience": 50.0
-}

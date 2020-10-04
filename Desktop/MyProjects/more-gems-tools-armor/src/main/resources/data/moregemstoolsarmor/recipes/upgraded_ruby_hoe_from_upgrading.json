@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:ruby_hoe"
-  },
-  "result": "moregemstoolsarmor:upgraded_ruby_hoe",
-  "experience": 50.0
-}

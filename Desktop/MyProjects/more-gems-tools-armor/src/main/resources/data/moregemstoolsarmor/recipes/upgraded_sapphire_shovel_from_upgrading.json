@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:sapphire_shovel"
-  },
-  "result": "moregemstoolsarmor:upgraded_sapphire_shovel",
-  "experience": 50.0
-}

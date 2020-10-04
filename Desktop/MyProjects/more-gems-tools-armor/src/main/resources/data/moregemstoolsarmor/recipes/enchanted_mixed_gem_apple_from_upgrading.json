@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:mixed_gem_apple"
-  },
-  "result": "moregemstoolsarmor:enchanted_mixed_gem_apple",
-  "experience": 50.0
-}

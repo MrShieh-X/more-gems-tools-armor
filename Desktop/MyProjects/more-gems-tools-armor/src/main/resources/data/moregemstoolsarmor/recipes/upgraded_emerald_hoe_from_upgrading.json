@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:emerald_hoe"
-  },
-  "result": "moregemstoolsarmor:upgraded_emerald_hoe",
-  "experience": 50.0
-}

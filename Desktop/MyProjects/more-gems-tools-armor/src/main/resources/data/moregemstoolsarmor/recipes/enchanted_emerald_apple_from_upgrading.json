@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:emerald_apple"
-  },
-  "result": "moregemstoolsarmor:enchanted_emerald_apple",
-  "experience": 50.0
-}

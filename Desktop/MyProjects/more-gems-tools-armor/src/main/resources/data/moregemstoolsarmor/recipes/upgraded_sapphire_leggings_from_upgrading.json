@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:sapphire_leggings"
-  },
-  "result": "moregemstoolsarmor:upgraded_sapphire_leggings",
-  "experience": 50.0
-}

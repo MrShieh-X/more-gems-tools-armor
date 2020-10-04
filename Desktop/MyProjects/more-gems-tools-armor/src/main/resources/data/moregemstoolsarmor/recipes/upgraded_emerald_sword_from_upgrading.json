@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:emerald_sword"
-  },
-  "result": "moregemstoolsarmor:upgraded_emerald_sword",
-  "experience": 50.0
-}

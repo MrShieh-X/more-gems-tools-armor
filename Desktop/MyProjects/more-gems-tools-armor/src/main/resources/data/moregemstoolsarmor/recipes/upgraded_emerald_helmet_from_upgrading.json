@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:emerald_helmet"
-  },
-  "result": "moregemstoolsarmor:upgraded_emerald_helmet",
-  "experience": 50.0
-}

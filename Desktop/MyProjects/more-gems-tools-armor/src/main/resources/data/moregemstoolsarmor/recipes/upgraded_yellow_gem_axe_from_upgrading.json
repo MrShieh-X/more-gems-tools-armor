@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:yellow_gem_axe"
-  },
-  "result": "moregemstoolsarmor:upgraded_yellow_gem_axe",
-  "experience": 50.0
-}

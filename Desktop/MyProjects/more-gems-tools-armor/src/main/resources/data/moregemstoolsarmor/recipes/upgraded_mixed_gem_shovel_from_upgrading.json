@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:mixed_gem_shovel"
-  },
-  "result": "moregemstoolsarmor:upgraded_mixed_gem_shovel",
-  "experience": 50.0
-}

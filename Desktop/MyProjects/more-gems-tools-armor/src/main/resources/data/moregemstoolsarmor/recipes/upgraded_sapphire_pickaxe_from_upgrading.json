@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:sapphire_pickaxe"
-  },
-  "result": "moregemstoolsarmor:upgraded_sapphire_pickaxe",
-  "experience": 50.0
-}

@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:ruby_helmet"
-  },
-  "result": "moregemstoolsarmor:upgraded_ruby_helmet",
-  "experience": 50.0
-}

@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:sapphire_apple"
-  },
-  "result": "moregemstoolsarmor:enchanted_sapphire_apple",
-  "experience": 50.0
-}

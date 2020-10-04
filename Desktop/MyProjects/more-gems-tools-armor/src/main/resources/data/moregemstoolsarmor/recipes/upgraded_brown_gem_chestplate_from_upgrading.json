@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:brown_gem_chestplate"
-  },
-  "result": "moregemstoolsarmor:upgraded_brown_gem_chestplate",
-  "experience": 50.0
-}

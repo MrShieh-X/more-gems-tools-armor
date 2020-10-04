@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:sapphire_boots"
-  },
-  "result": "moregemstoolsarmor:upgraded_sapphire_boots",
-  "experience": 50.0
-}

@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:purple_gem_apple"
-  },
-  "result": "moregemstoolsarmor:enchanted_purple_gem_apple",
-  "experience": 50.0
-}

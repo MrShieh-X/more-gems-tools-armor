@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:brown_gem_pickaxe"
-  },
-  "result": "moregemstoolsarmor:upgraded_brown_gem_pickaxe",
-  "experience": 50.0
-}

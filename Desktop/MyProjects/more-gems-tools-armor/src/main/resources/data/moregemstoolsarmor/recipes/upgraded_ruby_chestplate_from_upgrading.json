@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:ruby_chestplate"
-  },
-  "result": "moregemstoolsarmor:upgraded_ruby_chestplate",
-  "experience": 50.0
-}

@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:brown_gem_helmet"
-  },
-  "result": "moregemstoolsarmor:upgraded_brown_gem_helmet",
-  "experience": 50.0
-}

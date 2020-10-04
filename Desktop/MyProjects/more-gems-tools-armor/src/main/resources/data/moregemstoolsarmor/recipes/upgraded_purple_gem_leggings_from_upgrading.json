@@ -1,8 +1,0 @@
-{
-  "type": "moregemstoolsarmor:upgrading",
-  "ingredient": {
-    "item": "moregemstoolsarmor:purple_gem_leggings"
-  },
-  "result": "moregemstoolsarmor:upgraded_purple_gem_leggings",
-  "experience": 50.0
-}

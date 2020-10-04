@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "moregemstoolsarmor:block/purple_gem_block"
-  }
-}
