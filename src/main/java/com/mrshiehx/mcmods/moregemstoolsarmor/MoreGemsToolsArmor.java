@@ -41,7 +41,6 @@ import org.apache.logging.log4j.Logger;
 import java.util.Arrays;
 import java.util.function.ToIntFunction;
 
-
 public class MoreGemsToolsArmor implements ModInitializer {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final Item sapphire = new Item(new Item.Settings().group(MoreGemsToolsArmor.MOREGEMSTOOLSARMOR_GROUP).maxCount(64));//蓝宝石
@@ -694,9 +693,7 @@ public class MoreGemsToolsArmor implements ModInitializer {
 
     //矿物生成
 	/*1.15矿物生成，1.16用不了
-
 	private void brownGemOreGeneration(Biome biome) {
-
 		if(biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND) {
 			biome.addFeature(
 					GenerationStep.Feature.UNDERGROUND_ORES,
@@ -802,7 +799,6 @@ public class MoreGemsToolsArmor implements ModInitializer {
 									0, //Min y level
 									64 //Max y level
 							))));
-
 	}
 }*/
 }

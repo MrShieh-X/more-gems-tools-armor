@@ -10,8 +10,9 @@ MrShiehX own this mod's copyright.<br/>
 Anyone can take advices of this mod to us.
 ## Version
 The latest version: <br/>
-<b>1.2 (Oct. 5, 2020)</b><br/>
+<b>1.2.1 (Oct. 5, 2020)</b><br/>
 Historical version: <br/>
+<b>1.2.1 (Oct. 5, 2020)</b><br/>
 <b>1.2 (Oct. 5, 2020)</b><br/>
 <b>1.1 (Sept. 18, 2020)</b><br/>
 <b>1.0.2 (Sept. 10, 2020)</b><br/>

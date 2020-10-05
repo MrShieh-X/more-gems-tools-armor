@@ -1,6 +1,10 @@
 # Update Logs
 Currently, the latest version is 1.2, which was updated on October 5, 2020.
 
+## 1.2.1 (Oct. 5, 2020)
+- Deleted the Chinese in fabric.mod.json
+- Fixed the problem that ores could not be generated
+
 ## 1.2 (Oct. 5, 2020)
 - Reduced the parameters of mixed gem armor
 - Reduced the parameters of the mixed gem tools
