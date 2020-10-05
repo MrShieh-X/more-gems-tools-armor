@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moregemstoolsarmor:brown_gem_ore"
+  },
+  "result": "moregemstoolsarmor:brown_gem",
+  "experience": 1.0,
+  "cookingtime": 200
+}

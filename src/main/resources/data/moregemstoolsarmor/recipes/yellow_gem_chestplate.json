@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "moregemstoolsarmor:yellow_gem"
+    }
+  },
+  "result": {
+    "item": "moregemstoolsarmor:yellow_gem_chestplate"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:sapphire_hoe"
+  },
+  "result": "moregemstoolsarmor:upgraded_sapphire_hoe",
+  "experience": 50.0
+}

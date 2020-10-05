@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:sapphire_chestplate"
+  },
+  "result": "moregemstoolsarmor:upgraded_sapphire_chestplate",
+  "experience": 50.0
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:brown_gem_apple"
+  },
+  "result": "moregemstoolsarmor:enchanted_brown_gem_apple",
+  "experience": 50.0
+}

@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:netherite_apple"
+  },
+  "result": "moregemstoolsarmor:enchanted_netherite_apple",
+  "experience": 50.0
+}

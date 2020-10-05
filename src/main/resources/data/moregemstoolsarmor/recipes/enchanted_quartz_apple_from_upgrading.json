@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:quartz_apple"
+  },
+  "result": "moregemstoolsarmor:enchanted_quartz_apple",
+  "experience": 50.0
+}

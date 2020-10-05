@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:emerald_chestplate"
+  },
+  "result": "moregemstoolsarmor:upgraded_emerald_chestplate",
+  "experience": 50.0
+}

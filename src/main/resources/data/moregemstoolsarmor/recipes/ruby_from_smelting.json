@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "moregemstoolsarmor:ruby_ore"
+  },
+  "result": "moregemstoolsarmor:ruby",
+  "experience": 1.0,
+  "cookingtime": 200
+}

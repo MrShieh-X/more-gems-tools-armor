@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moregemstoolsarmor:brown_gem_block"
+    }
+  ],
+  "result": {
+    "item": "moregemstoolsarmor:brown_gem",
+    "count": 9
+  }
+}

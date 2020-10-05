@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "moregemstoolsarmor:item/yellow_gem_shovel"
+  }
+}

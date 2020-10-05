@@ -1,0 +1,8 @@
+{
+  "type": "moregemstoolsarmor:upgrading",
+  "ingredient": {
+    "item": "moregemstoolsarmor:sapphire_sword"
+  },
+  "result": "moregemstoolsarmor:upgraded_sapphire_sword",
+  "experience": 50.0
+}
